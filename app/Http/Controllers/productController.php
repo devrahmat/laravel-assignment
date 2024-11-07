@@ -97,7 +97,7 @@ public function updateProduct(Request $request)
     if ($validator->fails()) {
         return redirect()->back()
             ->withErrors($validator)
-            ->withInput()->with('error', 'Something Wrong! Fix the form errors');;
+            ->withInput()->with('error', 'Something Wrong! Fix the form errors');
     }
 
 
